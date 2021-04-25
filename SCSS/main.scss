@@ -3,11 +3,15 @@
     padding: 0;
     box-sizing: border-box;
   }
-   /* ESCRITORIO */
+   /* VARIABLES */
   
+   $color-body: #989A9A;
+   $color-header: #010B14;
+   
+
   body {
       font-family: system-ui;
-      background-color: #989A9A;
+      background-color: $color-body;
       color: #090C02;
       font-family: 'Open Sans', sans-serif;
       font-size: 20px;
@@ -21,7 +25,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #010B14;
+    background-color: $color-header;
     justify-content: space-between;
     
   }
@@ -294,12 +298,20 @@
 
   .subscripcion__boton {
     margin: 7% 0% 5%;
-<<<<<<< HEAD
-  }
-=======
   }
 
+  $animal: perro; /* Mi constante */
+  body {
+        @if $animal == gato {
+               background-color: blue;
+        } @else if $animal == perro {
+                   color: red;
+       } @else if $animal == caballo {
+                  color: green;
+       } @else {
+                  color: black;
+        }
+  }
+  
 
 
-
->>>>>>> rama1
