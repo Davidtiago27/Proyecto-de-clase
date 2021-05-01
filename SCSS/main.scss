@@ -1,317 +1,429 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-   /* VARIABLES */
-  
-   $color-body: #989A9A;
-   $color-header: #010B14;
-   
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 
   body {
       font-family: system-ui;
-      background-color: $color-body;
+      background-color: #DBDEE6;
       color: #090C02;
       font-family: 'Open Sans', sans-serif;
       font-size: 20px;
-      padding-top: 150px;
-      
-    }
-  
-  .bienvenida {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: $color-header;
-    justify-content: space-between;
-    
-  }
-  
-  .bienvenida__titulo {
-      color: rgb(234, 219, 248);
-      background-color: #010B14;
-    padding: 15px;
-    font-family: 'Satisfy', cursive;
-    font-size: 280%;
-    position: sticky;
-    top: 0; 
-  
-   
-  }
-  
-  
-  .bienvenida__titulo--text {
-  text-decoration: none;
-  color: rgb(234, 219, 248);
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-iteration-count: initial;
-  
-  }
-  
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  
-  
-  .menu {
-    display: flex;
-      align-items: center;
-    width: 55%;
-    justify-content: space-evenly;
-    color: rgb(234, 219, 248);
-    font-size: 18px;
-     
-  
-    }
-  
-    .menu__home {
-      color: rgb(234, 219, 248);
-      text-decoration: none;
-      transition: all 1s;
-      font-size: 1em;
-    }
-  
-    .menu__home:hover {
-      text-decoration: overline;
-    }
-  
-    .menu__destinos {
-      color: rgb(234, 219, 248);
-      text-decoration: none;
-      transition: all 1s;
-    }
-  
-    .menu__destinos:hover {
-      text-decoration: overline;
-    }
-  
-    .menu__preguntas {
-      color: rgb(234, 219, 248);
-      text-decoration: none;
-      transition: all 1s;
-    }
-  
-    .menu__preguntas:hover {
-      text-decoration: overline;
-    }
-  
-    .menu__blog {
-      color: rgb(234, 219, 248);
-      text-decoration: none;
-      transition: all 1s;
-    }
-  
-    .menu__blog:hover {
-      text-decoration: overline;
-    }
-  
-    .menu__contacto--color {
-      color: rgb(234, 219, 248);
-      font-size: 22px;
-      text-decoration: none;
-      transition: all 1s;
-    }
-  
-    .menu__contacto--color:hover {
-      text-decoration: overline;
-    }
-  
-  .parrafo__bienvenida {
-    
-    font-size: 20px;
-    text-align: center ;
-     margin: 10px;
-    padding: 10px;
-  
-  }
+      padding-top: 0px; }
 
-  .parrafo__bienvenida--color {
-      color: red;
-  }
-  
-  
-  .imagenes {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto ;
-  
-  }
-  
-  .imagenes span {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 1em;
-    justify-items: center;
-    font-size: 25px;
-  }
-  
-  .imagenes {
-    
-    margin: 10px;
-    padding: 20px;
-  }
-  
-  .imagenes__imagen1 {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    transition: all 0.5s;
-  }
-  
-  .imagenes__imagen1:hover {
-  transform: scale(1.1);
-  }
-  
-  
-  .imagenes__imagen2 {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    transition: all 0.5s;
-  }
-  
-  .imagenes__imagen2:hover {
-    transform: scale(1.1);
-  
-  }
-  
-  .imagenes__imagen3 {
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    transition: all 0.5s;
-  }
-  
-  .imagenes__imagen3:hover {
-    transform: scale(1.1);
-  }
-  
-  .tabla {
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    width: 800px ;
-    height: 400px ;
-    border: none;
-    border-radius: 20px;
-  }
-  .subscripcion {
-   
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    
-  }
-  
-  .redes {
-    position: fixed;
-    bottom: 0;
-    right: 5px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    transition: all 0.5s;
-    
-    } 
-  
-   
-  
-  li {
-    list-style-type: none;
-  }
-  
-  .españa {
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .francia {
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .dinamarca {
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .preguntas {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 10fr;
-    
-    
-  }
-  
-  
-  .Pregunta1 {
-    margin: 10px;
-    padding: 10px;
-    
-  }
-  
-  .Pregunta2 {
-    margin: 10px;
-    padding: 10px;
-    }
-  
-  .Pregunta3 {
-    margin: 10px;
-    padding: 10px;
-    }
-  
-  .blog {
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .contacto {
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .formulario {
-    margin: 10px;
-    padding: 10px;
-  }
+      .bienvenida__titulo {
+          color: rgb(234, 219, 248);
+          background-color: #010B14;
+        padding: 15px;
+        font-family: 'Satisfy', cursive;
+        font-size: 280%;
+        position: sticky;
+        top: 0; 
+        text-align: center;
+        margin: 0px;
+            
+      }
 
-  .subscripcion {
-    background-color: #797C7C;
-    font-size: medium;
-  }
+      .bienvenida__titulo--text {
+          text-decoration: none;
+          color: rgb(234, 219, 248);
+          animation-duration: 2s;
+          animation-name: aparecer;
+          animation-iteration-count: initial;
+          
+          }
 
-  .subscripcion__email {
-    margin: 2% 0% 2% 0%;
-  }
+      .menu {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          background-color: #010B14;
+          color: rgb(234, 219, 248);            
+          width: 100%;
+          justify-content: space-around;
+          font-size: 20px;
+          text-decoration: none;
+      }
 
-  .subscripcion__boton {
-    margin: 7% 0% 5%;
-  }
-
-  $animal: perro; /* Mi constante */
-  body {
-        @if $animal == gato {
-               background-color: blue;
-        } @else if $animal == perro {
-                   color: red;
-       } @else if $animal == caballo {
-                  color: green;
-       } @else {
-                  color: black;
+      .menu__home {
+          color: rgb(234, 219, 248);
+          text-decoration: none;
+          padding: 0% 5% 0% 5%;
+          
         }
-  }
+  
+      
+        .menu__destinos {
+          color: rgb(234, 219, 248);
+          text-decoration: none;
+          padding: 0% 5% 0% 5%;
+        }
+
+      
+        .menu__preguntas {
+          color: rgb(234, 219, 248);
+          text-decoration: none;
+          padding: 0% 5% 0% 5%;
+        }
+      
+        .menu__blog {
+          color: rgb(234, 219, 248);
+          text-decoration: none;
+          transition: all 1s;
+          padding: 0% 5% 0% 5%;
+        }
+      
+      
+        .menu__contacto--color {
+          color: rgb(234, 219, 248);
+          font-size: 22px;
+          text-decoration: none;
+          transition: all 1s;
+          padding: 0% 5% 0% 5%;
+        }
+
+        .parrafo__bienvenida {
+  
+          font-size: 20px;
+          text-align: center ;
+           margin: 10px;
+          padding: 10px;
+        
+        }
+
+        .imagenes__imagen1 {
+          
+          border-radius: 20px;
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          transition: all 0.5s;
+          text-align: center;
+        }
+
+        .imagenes__imagen2 {
+          
+          border-radius: 20px;
+          transition: all 0.5s;
+        }
+      
+        
+        .imagenes__imagen3 {
+          
+          border-radius: 20px;
+          transition: all 0.5s;
+        }
+      
+      
+        .subscripcion {
+ 
+          margin: 10px;
+          padding: 10px;
+          border-radius: 20px;
+          
+        }
+
+        .redes {
+          list-style: none;
+          padding: 2% 30% 2% 30%;
+          display: flex;
+          grid-column-start: -3;
+          justify-content: space-evenly; }
+          
+  @media (min-width: 768px) {
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+         /* VARIABLES */
+        
+         
+      
+
+        
+        .bienvenida {
+          display: flex;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          background-color: #010B14;
+          justify-content: space-between;
+          
+        }
+        
+        .bienvenida__titulo {
+            color: rgb(234, 219, 248);
+            background-color: #010B14;
+          padding: 15px;
+          font-family: 'Satisfy', cursive;
+          font-size: 280%;
+          position: sticky;
+          top: 0; 
+        
+         
+        }
+        
+        
+        .bienvenida__titulo--text {
+        text-decoration: none;
+        color: rgb(234, 219, 248);
+        animation-duration: 2s;
+        animation-name: aparecer;
+        animation-iteration-count: initial;
+        
+        }
+        
+        @keyframes aparecer {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        
+        
+        
+        .menu {
+          display: flex;
+            align-items: center;
+          width: 55%;
+          justify-content: space-evenly;
+          color: rgb(234, 219, 248);
+          font-size: 18px;
+           
+        
+          }
+        
+          .menu__home {
+            color: rgb(234, 219, 248);
+            text-decoration: none;
+            transition: all 1s;
+            font-size: 1em;
+          }
+        
+          .menu__home:hover {
+            text-decoration: overline;
+          }
+        
+          .menu__destinos {
+            color: rgb(234, 219, 248);
+            text-decoration: none;
+            transition: all 1s;
+          }
+        
+          .menu__destinos:hover {
+            text-decoration: overline;
+          }
+        
+          .menu__preguntas {
+            color: rgb(234, 219, 248);
+            text-decoration: none;
+            transition: all 1s;
+          }
+        
+          .menu__preguntas:hover {
+            text-decoration: overline;
+          }
+        
+          .menu__blog {
+            color: rgb(234, 219, 248);
+            text-decoration: none;
+            transition: all 1s;
+          }
+        
+          .menu__blog:hover {
+            text-decoration: overline;
+          }
+        
+          .menu__contacto--color {
+            color: rgb(234, 219, 248);
+            font-size: 22px;
+            text-decoration: none;
+            transition: all 1s;
+          }
+        
+          .menu__contacto--color:hover {
+            text-decoration: overline;
+          }
+        
+        .parrafo__bienvenida {
+          
+          font-size: 20px;
+          text-align: center ;
+          margin: 120px 100px 60px 100px;
+          padding: 10px;
+        
+        }
+      
+        .parrafo__bienvenida--color {
+            color: red;
+        }
+        
+        
+        .imagenes {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-rows: auto auto ;
+        
+        }
+        
+        .imagenes span {
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          gap: 1em;
+          justify-items: center;
+          font-size: 25px;
+        }
+        
+        .imagenes {
+          
+          margin: 10px;
+          padding: 20px;
+        }
+        
+        .imagenes__imagen1 {
+          margin: 10px;
+          padding: 10px;
+          border-radius: 20px;
+          display: grid;
+          grid-template-rows: 1fr 1fr;
+          transition: all 0.5s;
+        }
+        
+        .imagenes__imagen1:hover {
+        transform: scale(1.1);
+        }
+        
+        
+        .imagenes__imagen2 {
+          margin: 10px;
+          padding: 10px;
+          border-radius: 20px;
+          transition: all 0.5s;
+        }
+        
+        .imagenes__imagen2:hover {
+          transform: scale(1.1);
+        
+        }
+        
+        .imagenes__imagen3 {
+          margin: 10px;
+          padding: 10px;
+          border-radius: 20px;
+          transition: all 0.5s;
+        }
+        
+        .imagenes__imagen3:hover {
+          transform: scale(1.1);
+        }
+        
+        .tabla {
+          text-align: center;
+          margin: 10px;
+          padding: 10px;
+          width: 800px ;
+          height: 400px ;
+          border: none;
+          border-radius: 20px;
+        }
+        .subscripcion {
+         
+          margin: 10px;
+          padding: 10px;
+          border-radius: 20px;
+          
+        }
+        
+        .redes {
+          position: fixed;
+          bottom: 0;
+          right: 5px;
+          margin: 10px;
+          padding: 10px;
+          border-radius: 20px;
+          transition: all 0.5s;
+          
+          } 
+        
+         
+        
+        li {
+          list-style-type: none;
+        }
+        
+        .españa {
+          margin: 10px;
+          padding: 10px;
+        }
+        
+        .francia {
+          margin: 10px;
+          padding: 10px;
+        }
+        
+        .dinamarca {
+          margin: 10px;
+          padding: 10px;
+        }
+        
+        .preguntas {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr; 
+          grid-template-rows: 10fr;
+          
+          
+        }
+        
+        
+        .Pregunta1 {
+          margin: 10px;
+          padding: 10px;
+          
+        }
+        
+        .Pregunta2 {
+          margin: 10px;
+          padding: 10px;
+          }
+        
+        .Pregunta3 {
+          margin: 10px;
+          padding: 10px;
+          }
+        
+        .blog {
+          margin: 10px;
+          padding: 10px;
+        }
+        
+        .contacto {
+          margin: 10px;
+          padding: 10px;
+        }
+        
+        .formulario {
+          margin: 10px;
+          padding: 10px;
+        }
+      
+        .subscripcion {
+          background-color: #797C7C;
+          font-size: medium;
+        }
+      
+        .subscripcion__email {
+          margin: 2% 0% 2% 0%;
+        }
+      
+        .subscripcion__boton {
+          margin: 7% 0% 5%;
+        }
+      
+      }
   
 
 
