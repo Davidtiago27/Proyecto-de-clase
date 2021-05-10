@@ -15,11 +15,11 @@ body {
 
  header {
   background-color: #010B14;
-  
+  color: white;
  }
 
- .nav-item {
-   color: blanchedalmond;
+ .header {
+   color: white;
  }
 
 .bienvenida {
