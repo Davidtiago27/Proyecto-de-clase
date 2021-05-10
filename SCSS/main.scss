@@ -10,7 +10,129 @@
       color: #090C02;
       font-family: 'Open Sans', sans-serif;
       font-size: 20px;
-      padding-top: 0px; }
+      padding-top: 150px;
+      
+    }
+
+    .nav-item {
+      color: blanchedalmond;
+    }
+  
+  .bienvenida {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #010B14;
+    justify-content: space-between;
+    
+  }
+  
+  .bienvenida__titulo {
+      color: rgb(234, 219, 248);
+      background-color: #010B14;
+    padding: 15px;
+    font-family: 'Satisfy', cursive;
+    font-size: 280%;
+    position: sticky;
+    top: 0; 
+  
+   
+  }
+  
+  
+  .bienvenida__titulo--text {
+  text-decoration: none;
+  color: rgb(234, 219, 248);
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+  
+  }
+  
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  .menu {
+    display: flex;
+      align-items: center;
+    width: 55%;
+    justify-content: space-evenly;
+    color: rgb(234, 219, 248);
+    font-size: 18px;
+     
+  
+    }
+  
+    .menu__home {
+      color: rgb(234, 219, 248);
+      text-decoration: none;
+      transition: all 1s;
+      font-size: 1em;
+    }
+  
+    .menu__home:hover {
+      text-decoration: overline;
+    }
+  
+    .menu__destinos {
+      color: rgb(234, 219, 248);
+      text-decoration: none;
+      transition: all 1s;
+    }
+  
+    .menu__destinos:hover {
+      text-decoration: overline;
+    }
+  
+    .menu__preguntas {
+      color: rgb(234, 219, 248);
+      text-decoration: none;
+      transition: all 1s;
+    }
+  
+    .menu__preguntas:hover {
+      text-decoration: overline;
+    }
+  
+    .menu__blog {
+      color: rgb(234, 219, 248);
+      text-decoration: none;
+      transition: all 1s;
+    }
+  
+    .menu__blog:hover {
+      text-decoration: overline;
+    }
+  
+    .menu__contacto--color {
+      color: rgb(234, 219, 248);
+      font-size: 22px;
+      text-decoration: none;
+      transition: all 1s;
+    }
+  
+    .menu__contacto--color:hover {
+      text-decoration: overline;
+    }
+  
+  .parrafo__bienvenida {
+    
+    font-size: 20px;
+    text-align: center ;
+     margin: 10px;
+    padding: 10px;
+  
+  }
 
       .bienvenida__titulo {
           color: rgb(234, 219, 248);

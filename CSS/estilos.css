@@ -3,6 +3,23 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* ESCRITORIO */
+body {
+  font-family: system-ui;
+  background-color: #989A9A;
+  color: #090C02;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+ }
+
+ header {
+  background-color: #010B14;
+  color: white;
+ }
+
+ .header {
+   color: white;
+ }
 
   body {
       font-family: system-ui;
