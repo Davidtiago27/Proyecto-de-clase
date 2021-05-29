@@ -6,7 +6,7 @@
 /* ESCRITORIO */
 body {
   font-family: system-ui;
-  background-color: #FFF9EC;
+  background-color: #F6F8FF;
   color: #090C02;
   
   font-size: 20px;
@@ -18,7 +18,7 @@ body {
 
   body {
       font-family: system-ui;
-      background-color: #FFF9EC;
+      background-color: #F6F8FF;
       color: #090C02;
       
       font-size: 20px;
@@ -146,12 +146,17 @@ body {
           input {
             border: none;
             border-radius: 10px;
-            background-color: #FFF9EC;
+            background-color: #F6F8FF;
           }
 
           .subscripcion {
-            background-color: #363330;
+            background-color: #50514F;
             font-size: medium;
+          }
+
+          .boton {
+            
+            
           }
           
   @media (min-width: 768px) {
@@ -435,22 +440,46 @@ body {
         }
       
         .subscripcion {
-          background-color: #363330;
+          background-color: #50514F;
           font-size: medium;
         }
       
         .subscripcion__email {
-          margin: 2% 0% 2% 0%;
+          
+          border: 0;
+          width: 240px;
+          padding: 15px 20px;
+          display: flex;
+          text-align: center;
+          border-color: none;
+          border-radius: 10px;
+          
         }
       
         .subscripcion__boton {
           margin: 7% 0% 5%;
+          width: 240px;
+          border: 0;
+          border-color: none;
+          border-radius: 10px;
         }
       
-        input {
+        .boton {
           border: none;
+          width: 240px;
+          padding: 15px 20px;
           border-radius: 10px;
-          background-color: #FFF9EC;
+          background-color: #F6F8FF;
+          border-color: none;
         }
-
+        
+        .comentario1 {
+          border: 0;
+          width: 240px;
+          padding: 15px 20px;
+          display: flex;
+          text-align: center;
+          border-color: black;
+          border-radius: 10px;
+        }
       }
