@@ -3,136 +3,28 @@
   padding: 0;
   box-sizing: border-box; }
 
+/* ESCRITORIO */
+body {
+  font-family: system-ui;
+  background-color: #F6F8FF;
+  color: #090C02;
+  
+  font-size: 20px;
+ }
+
+ .d-block {
+   width: 50%;
+ }
+
+ 
 
   body {
       font-family: system-ui;
-      background-color: #DBDEE6;
+      background-color: #F6F8FF;
       color: #090C02;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 20px;
-      padding-top: 150px;
       
-    }
-
-    .nav-item {
-      color: blanchedalmond;
-    }
-  
-  .bienvenida {
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #010B14;
-    justify-content: space-between;
-    
-  }
-  
-  .bienvenida__titulo {
-      color: rgb(234, 219, 248);
-      background-color: #010B14;
-    padding: 15px;
-    font-family: 'Satisfy', cursive;
-    font-size: 280%;
-    position: sticky;
-    top: 0; 
-  
-   
-  }
-  
-  
-  .bienvenida__titulo--text {
-  text-decoration: none;
-  color: rgb(234, 219, 248);
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-iteration-count: initial;
-  
-  }
-  
-  @keyframes aparecer {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  
-  
-  .menu {
-    display: flex;
-      align-items: center;
-    width: 55%;
-    justify-content: space-evenly;
-    color: rgb(234, 219, 248);
-    font-size: 18px;
-     
-  
-    }
-  
-    .menu__home {
-      color: rgb(234, 219, 248);
-      text-decoration: none;
-      transition: all 1s;
-      font-size: 1em;
-    }
-  
-    .menu__home:hover {
-      text-decoration: overline;
-    }
-  
-    .menu__destinos {
-      color: rgb(234, 219, 248);
-      text-decoration: none;
-      transition: all 1s;
-    }
-  
-    .menu__destinos:hover {
-      text-decoration: overline;
-    }
-  
-    .menu__preguntas {
-      color: rgb(234, 219, 248);
-      text-decoration: none;
-      transition: all 1s;
-    }
-  
-    .menu__preguntas:hover {
-      text-decoration: overline;
-    }
-  
-    .menu__blog {
-      color: rgb(234, 219, 248);
-      text-decoration: none;
-      transition: all 1s;
-    }
-  
-    .menu__blog:hover {
-      text-decoration: overline;
-    }
-  
-    .menu__contacto--color {
-      color: rgb(234, 219, 248);
-      font-size: 22px;
-      text-decoration: none;
-      transition: all 1s;
-    }
-  
-    .menu__contacto--color:hover {
-      text-decoration: overline;
-    }
-  
-  .parrafo__bienvenida {
-    
-    font-size: 20px;
-    text-align: center ;
-     margin: 10px;
-    padding: 10px;
-  
-  }
+      font-size: 20px;
+      padding-top: 0px; }
 
       .bienvenida__titulo {
           color: rgb(234, 219, 248);
@@ -251,6 +143,178 @@
           display: flex;
           grid-column-start: -3;
           justify-content: space-evenly; }
+
+
+          input {
+            border: none;
+            border-radius: 10px;
+            background-color: #F6F8FF;
+          }
+
+          .subscripcion {
+            background-color: #50514F;
+            font-size: medium;
+          }
+
+          .españa {
+            margin: 15px;
+            padding: 10px;
+          }
+          
+          .francia {
+            margin: 15px;
+            padding: 10px;
+          }
+          
+          .dinamarca {
+            margin: 15px;
+            padding: 10px;
+          }
+
+          .Pregunta1 {
+            margin: 10px;
+            padding: 10px;
+            
+          }
+          
+          .Pregunta2 {
+            margin: 10px;
+            padding: 10px;
+            }
+          
+          .Pregunta3 {
+            margin: 10px;
+            padding: 10px;
+            }
+
+          .blog {
+            margin: 15px;
+            padding: 10px;
+          }
+
+          .contacto {
+            margin: 15px;
+            padding: 10px;
+          }
+
+          .subscripcion {
+            background-color: #50514F;
+            font-size: medium;
+          }
+        
+          .subscripcion__email {
+            background-color: transparent;
+            border: 0;
+            width: 100%;
+            padding: 15px 20px;
+            display: flex;
+            text-align: center;
+            border-color: none;
+            border-radius: 10px;
+            
+          }
+  
+          .subscripcion__email1 {
+          background-color: transparent;
+          border-width: 0px 0px 1px;
+          border-top-style: initial;
+          border-right-style: initial;
+          border-left-style: initial;
+          border-top-color: initial;
+          border-right-color: initial;
+          border-left-color: initial;
+          border-image: initial;
+          border-radius: 0px;
+          box-sizing: border-box;
+          color: rgb(17, 17, 17);
+          caret-color: currentcolor;
+          display: block;
+          margin: 0px;
+          padding: 8px 0px;
+          text-align: left;
+          outline: none;
+          width: 100%;
+          border-bottom-style: solid;
+          border-bottom-color: rgba(0, 0, 0, 0.2);
+          --inputCurrentColor: #111111;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          }
+  
+          .subscripcion__terminos {
+            padding: 15px 20px;
+            width: 100%;
+            border: 0;
+            border-color: none;
+            border-radius: 10px;
+          }
+        
+          .subscripcion__boton {
+            padding: 15px 20px;
+            width: 240px;
+            border: 0;
+            border-color: none;
+            border-radius: 10px;
+          }
+        
+          .seleccion {
+            margin: 30px 0px 30px 0px;
+          }
+  
+          .boton {
+            border: none;
+            padding: 15px 20px;
+            border-radius: 6.25rem;
+            background-color: #F6F8FF;
+            border-color: none;
+            transition: all 0.5s;
+          }
+  
+          .boton1 {
+            border: none;
+            padding: 15px 20px;
+            border-radius: 6.25rem;
+            background-color: #50514F;
+            border-color: none;
+            transition: all 0.5s;
+          }
+        
+          .boton1:hover {
+          transform: scale(1.1);
+          }
+          
+          .comentario {
+            margin: 30px 0px 0px 0px;
+          }
+  
+          .comentario1 {
+            background-color: transparent;
+            border-width: 0px 0px 1px;
+            border-top-style: initial;
+            border-right-style: initial;
+            border-left-style: initial;
+            border-top-color: initial;
+            border-right-color: initial;
+            border-left-color: initial;
+            border-image: initial;
+            border-radius: 0px;
+            box-sizing: border-box;
+            color: rgb(17, 17, 17);
+            caret-color: currentcolor;
+            display: block;
+            margin: 0px;
+            padding: 8px 0px;
+            text-align: left;
+            outline: none;
+            width: 100%;
+            border-bottom-style: solid;
+            border-bottom-color: rgba(0, 0, 0, 0.2);
+            --inputCurrentColor: #111111;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
           
   @media (min-width: 768px) {
       *{
@@ -261,7 +325,7 @@
          /* VARIABLES */
         
          
-      
+         
 
         
         .bienvenida {
@@ -523,7 +587,7 @@
         }
         
         .contacto {
-          margin: 120px 100px 10px 10px;
+          margin: 50px 10px 10px 10px;
           padding: 10px;
         }
         
@@ -533,18 +597,126 @@
         }
       
         .subscripcion {
-          background-color: #797C7C;
+          background-color: #50514F;
           font-size: medium;
         }
       
         .subscripcion__email {
-          margin: 2% 0% 2% 0%;
+          background-color: transparent;
+          border: 0;
+          width: 100%;
+          padding: 15px 20px;
+          display: flex;
+          text-align: center;
+          border-color: none;
+          border-radius: 10px;
+          
+        }
+
+        .subscripcion__email1 {
+        background-color: transparent;
+        border-width: 0px 0px 1px;
+        border-top-style: initial;
+        border-right-style: initial;
+        border-left-style: initial;
+        border-top-color: initial;
+        border-right-color: initial;
+        border-left-color: initial;
+        border-image: initial;
+        border-radius: 0px;
+        box-sizing: border-box;
+        color: rgb(17, 17, 17);
+        caret-color: currentcolor;
+        display: block;
+        margin: 0px;
+        padding: 8px 0px;
+        text-align: left;
+        outline: none;
+        width: 100%;
+        border-bottom-style: solid;
+        border-bottom-color: rgba(0, 0, 0, 0.2);
+        --inputCurrentColor: #111111;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+
+        .subscripcion__terminos {
+          padding: 15px 20px;
+          width: 100%;
+          border: 0;
+          border-color: none;
+          border-radius: 10px;
         }
       
         .subscripcion__boton {
-          margin: 7% 0% 5%;
+          padding: 15px 20px;
+          width: 240px;
+          border: 0;
+          border-color: none;
+          border-radius: 10px;
         }
       
+        .seleccion {
+          margin: 30px 0px 30px 0px;
+        }
+
+        .boton {
+          border: none;
+          padding: 15px 20px;
+          border-radius: 6.25rem;
+          background-color: #F6F8FF;
+          border-color: none;
+          transition: all 0.5s;
+        }
+
+        .boton1 {
+          border: none;
+          padding: 15px 20px;
+          border-radius: 6.25rem;
+          background-color: #50514F;
+          border-color: none;
+          transition: all 0.5s;
+        }
+      
+        .boton1:hover {
+        transform: scale(1.1);
+        }
+        
+        .comentario {
+          margin: 30px 0px 0px 0px;
+        }
+
+        .comentario1 {
+          background-color: transparent;
+          border-width: 0px 0px 1px;
+          border-top-style: initial;
+          border-right-style: initial;
+          border-left-style: initial;
+          border-top-color: initial;
+          border-right-color: initial;
+          border-left-color: initial;
+          border-image: initial;
+          border-radius: 0px;
+          box-sizing: border-box;
+          color: rgb(17, 17, 17);
+          caret-color: currentcolor;
+          display: block;
+          margin: 0px;
+          padding: 8px 0px;
+          text-align: left;
+          outline: none;
+          width: 100%;
+          border-bottom-style: solid;
+          border-bottom-color: rgba(0, 0, 0, 0.2);
+          --inputCurrentColor: #111111;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+
+        
+        
       }
   
 
