@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta name="description" content="Contactate con Bon Voyage-Consejos de viaje para tener mas informacion acerca de nosotros o consejos personalizados ">
+    <meta name="keywords" content="Viajes, blog, Madrid, Paris" > 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,47 +47,48 @@
         </nav>
 </header>
     
-    <div class="contacto">
+  <div class="contacto">
     <h4>Contacto</h4>
     <span>Por favor dejanos abajo tu correo, tu nombre y como podemos ayudarte y te responderemos lo mas pronto posible.</span>
+  </div>
+
+  <form class="boton" action="">
+    <div>
+      <label for="nombre">Nombre</label>
+      <input class="nombre" type="text" name="nombre" placeholder="Ingresar Nombre" id="nombre">
+    </div>
+    <div>
+      <label for="email">Correo Electronico</label>
+      <input type="email" name="email" placeholder="Correo electronico" id="email">
+    </div>
+    <div>
+      <label for="comentario">¿Como te podemos ayudar?</label>
+      <textarea class="comentario1" name="comentario" id="comentario" cols="20" rows="1"></textarea>
+    </div>
+        
+    <div>
+      <label for="femenino">Femenino</label>
+      <input type="radio" name="genero" id="femenino" value="F">
     </div>
 
-    <form class="boton" action="">
-        <div>
-            <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" placeholder="Ingresar Nombre" id="nombre">
-        </div>
-        <div>
-            <label for="email">Correo Electronico</label>
-            <input type="email" name="email" placeholder="Correo electronico" id="email">
-        </div>
-        <div>
-            <label for="comentario">¿Como te podemos ayudar?</label>
-            <textarea class="comentario1" name="comentario" id="comentario" cols="20" rows="1"></textarea>
-        </div>
-        
-        <div>
-            <label for="femenino">Femenino</label>
-            <input type="radio" name="genero" id="femenino" value="F">
-        </div>
-
-        <div>
-            <label for="masculino">Masculino</label>
-            <input type="radio" name="genero" id="masculino" value="M">
-        </div>
-        <div>
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpiar Formulario">
-        </div>
-    </form>
-</body>
-<footer class="redes">
-    <li><a href="https://www.facebook.com/"> <img src="Imagenes/facebook.png" width="50" alt="facebook"></a> </li>
-    <li><a href="https://www.instagram.com/"> <img src="Imagenes/instagram.png" width="50" alt="instagram"></a> </li>
-    <li><a href="https://twitter.com/?lang=es"> <img src="Imagenes/twitter.png" width="50" alt="twitter"></a> </li>
-    <li><a href="https://co.pinterest.com/"> <img src="Imagenes/pinterest.png" width="50" alt="pinterest"></a> </li>
-    </footer>
+    <div>
+      <label for="masculino">Masculino</label>
+      <input type="radio" name="genero" id="masculino" value="M">
+    </div>
+    <div>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpiar Formulario">
+    </div>
+  </form>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<footer class="redes">
+  <li><a href="https://www.facebook.com/"> <img src="Imagenes/facebook.png" width="50" alt="facebook"></a> </li>
+  <li><a href="https://www.instagram.com/"> <img src="Imagenes/instagram.png" width="50" alt="instagram"></a> </li>
+  <li><a href="https://twitter.com/?lang=es"> <img src="Imagenes/twitter.png" width="50" alt="twitter"></a> </li>
+  <li><a href="https://co.pinterest.com/"> <img src="Imagenes/pinterest.png" width="50" alt="pinterest"></a> </li>
+</footer>
+    
 </html>
