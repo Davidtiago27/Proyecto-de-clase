@@ -54,30 +54,27 @@
 
   <form class="boton" action="">
     <div>
-      <label for="nombre">Nombre</label>
-      <input class="nombre" type="text" name="nombre" placeholder="Ingresar Nombre" id="nombre">
+      <label for="nombre"></label>
+      <input class="subscripcion__email1" type="text" name="nombre" placeholder="Ingresar Nombre" id="nombre">
     </div>
     <div>
-      <label for="email">Correo Electronico</label>
-      <input type="email" name="email" placeholder="Correo electronico" id="email">
+      <label for="email"></label>
+      <input class="subscripcion__email1" type="email" name="email" placeholder="Correo electronico" id="email">
     </div>
     <div>
-      <label for="comentario">¿Como te podemos ayudar?</label>
-      <textarea class="comentario1" name="comentario" id="comentario" cols="20" rows="1"></textarea>
+      <label class="comentario" for="comentario">¿Como te podemos ayudar?</label>
+      <textarea class="comentario1" name="comentario" id="comentario" cols="20" rows="1" placeholder="Por favor escribe aqui tus preguntas o comentarios"></textarea>
     </div>
         
-    <div>
+    <div class="seleccion">
       <label for="femenino">Femenino</label>
-      <input type="radio" name="genero" id="femenino" value="F">
-    </div>
-
-    <div>
+      <input type="radio" name="genero" id="femenino" value="F">    
       <label for="masculino">Masculino</label>
       <input type="radio" name="genero" id="masculino" value="M">
     </div>
     <div>
-      <input type="submit" value="Enviar">
-      <input type="reset" value="Limpiar Formulario">
+      <input class="boton1" type="submit" value="Enviar">
+      <input class="boton1" type="reset" value="Limpiar Formulario">
     </div>
   </form>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
